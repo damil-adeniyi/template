@@ -1,21 +1,22 @@
 {
-  "name": "restaurant-page",
+  "name": "template",
   "version": "1.0.0",
   "description": "quite clear from the name, its a reataurant page 🤣",
-  "homepage": "https://github.com/damil-adeniyi/Restaurant-Page#readme",
+  "homepage": "https://github.com/damil-adeniyi/template#readme",
   "bugs": {
-    "url": "https://github.com/damil-adeniyi/Restaurant-Page/issues"
+    "url": "https://github.com/damil-adeniyi/template/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/damil-adeniyi/Restaurant-Page.git"
+    "url": "git+https://github.com/damil-adeniyi/template.git"
   },
   "license": "ISC",
   "author": "",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack serve --open --config webpack.dev.js"
   },
   "devDependencies": {
     "css-loader": "^7.1.4",
@@ -24,6 +25,7 @@
     "style-loader": "^4.0.0",
     "webpack": "^5.107.2",
     "webpack-cli": "^7.0.3",
-    "webpack-dev-server": "^5.2.5"
+    "webpack-dev-server": "^5.2.5",
+    "webpack-merge": "^6.0.1"
   }
 }
